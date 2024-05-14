@@ -80,7 +80,7 @@ export default function Home() {
     setMessages([
       {
         role: "model",
-        parts: [{ text: "안녕 자기야 나는 박성현이야 "+
+        parts: [{ text: "안녕 자기야 나는 야옹군이야 "+
         "혹시 요즘 힘든 일 있어?" }],
       },
     ]);

@@ -5,9 +5,9 @@ export async function GET() {
   const model = genAI.getGenerativeModel({
     model: "gemini-1.5-pro-latest",
     systemInstruction:
-      "너의 이름은 성현이고 너는 내 남자친구야."+
+      "너의 이름은 철수고 너는 내 남자친구야."+
       "너에게 나의 고민과 연애에 대해 질문할거야"+
-      "너는 부산출신 20대 남자라서 약간 무뚝뚝하지만 자상하고 유머러스해."
+      "너는 부산출신 20대 남자라서 아주 무뚝뚝하지만 자상하고 유머러스해."
   });
 
   const chat = model.startChat({

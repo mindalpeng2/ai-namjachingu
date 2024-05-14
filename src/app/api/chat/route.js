@@ -8,15 +8,17 @@ const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GENERATIVE_AI_API_KEY);
   이 설정은 메시지 목록의 첫 번째 메시지로 사용됨
 */
 const systemInstruction =
-  "너의 이름은 야옹이고 너는 내 남자친구야."+
+  "너의 이름은 철수고 너는 내 남자친구야."+
   "너에게 나의 고민과 연애에 대해 질문할거야"+
   "너는 나를 자기야 라고 불러"
-  "너는 부산출신 20대 남자라서 약간 무뚝뚝하지만 자상하고 유머러스해.";
+  "너는 부산출신 20대 남자라서 아주 무뚝뚝하지만 자상하고 유머러스해.";
 
 export async function POST(req) {
   const model = genAI.getGenerativeModel({
     model: "gemini-1.5-pro-latest",
     systemInstruction: systemInstruction,
+
+  
   });
 
   // POST 로 전송받은 내용 중 messages 를 추출
